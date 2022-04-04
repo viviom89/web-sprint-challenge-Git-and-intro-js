@@ -289,7 +289,7 @@ Use addArtist to do the following:
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
 function addArtist(artists, name, years, genre, nationality, bio) {
-  const me = {
+  /*const me = {
     "id": 20,
     "name": "Chhorvy Om", 
     "years": "1989 - present",
@@ -298,7 +298,9 @@ function addArtist(artists, name, years, genre, nationality, bio) {
     "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam leo, ultrices id lorem ac, blandit ullamcorper turpis. In hac habitasse platea dictumst."
   };  
   artists.push(me);
-  return artists;
+  return artists;*/
+  artists.push({name, years, genre, nationality, bio});
+    return artists;
 }
 //console.log(addArtist(artists, "Chhorvy Om", "1989 - present", "Web Design", "Cambodian-American", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam leo, ultrices id lorem ac, blandit ullamcorper turpis. In hac habitasse platea dictumst."));
 
@@ -321,7 +323,7 @@ function lotsOfArt(array) {
   return artistPaintings;
 }
 };
-console.log(lotsOfArt(artists));
+//console.log(lotsOfArt(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -351,10 +353,15 @@ Use artistByCountry to do the following:
 🌟 EXAMPLE: Invoking artistByCountry(artists, 'Spanish') will return: [ 'Salvador Dali', 'Pablo Picasso', 'Francisco Goya']
 */
 
-function artistByCountry(/*Your Code Here*/){
-  /*Your Code Here*/
-}
-
+function artistByCountry(artists, nationality) {
+ /* const countryArray = [];
+  for (i = 0; i <= artists.length-1; i++) {
+    if (artists[i].nationality === 'Spanish') {
+      countryArray.push(artists[i].name);
+    }
+  }*/
+};
+//console.log(artistByCountry(artists, 'Spanish'));
 
 
 /* ***** END OF TASKS ***** */
