@@ -218,8 +218,8 @@ console.log(artists[2].bio);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
-artists[8].name = "Vincent Van Gogh";
-console.log(artists[8].name);
+//artists[8].name = "Vincent Van Gogh";
+//console.log(artists[8].name);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -248,10 +248,10 @@ Use copy to do the following:
 function listOfNames(array) {
   let newArray = artists.slice();
   for (let i = 0; i < newArray.length; i++) {
-   return newArray.name;
+    return (newArray.map(i => i.name));
   };
 };
-//console.log(listOfNames(artists));
+console.log(listOfNames(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
