@@ -337,7 +337,7 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(array, name){
-  for (let i = 11; i < artists.length; i++) {
+  for (let i = 11; i <= artists.length-1; i++) {
     return artists[i].bio;
   }
 }
@@ -354,14 +354,15 @@ Use artistByCountry to do the following:
 */
 
 function artistByCountry(artists, nationality) {
- /* const countryArray = [];
-  for (i = 0; i <= artists.length-1; i++) {
-    if (artists[i].nationality === 'Spanish') {
+ const countryArray = [];
+  for (let i = 0; i <= artists.length-1; i++) {
+    if (artists[i].nationality === nationality) {
       countryArray.push(artists[i].name);
+      return countryArray;
     }
-  }*/
+  }
 };
-//console.log(artistByCountry(artists, 'Spanish'));
+console.log(artistByCountry(artists, 'Spanish'));
 
 
 /* ***** END OF TASKS ***** */
