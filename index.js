@@ -208,11 +208,11 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log(artists[0].name);
+//console.log(artists[0].name);
 
 
 //(2) Bio of the third artist (2nd index) in the array 
-console.log(artists[2].bio);
+//console.log(artists[2].bio);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 (not auto tested): 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -234,7 +234,7 @@ Use getArtistByIndex to do the following:
 function getArtistByIndex(array, index) {
   return `the artist at index ${artists[index].id} is ${artists[index].name}`;
 };
-console.log(getArtistByIndex(artists, 0));
+//console.log(getArtistByIndex(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -251,7 +251,7 @@ function listOfNames(array) {
     return (newArray.map(i => i.name));
   };
 };
-console.log(listOfNames(artists));
+//console.log(listOfNames(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -288,7 +288,7 @@ Use addArtist to do the following:
 4. Return the array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array, name, string, genre, nationality, bio) {
+function addArtist(artists, name, years, genre, nationality, bio) {
   const me = {
     "id": 20,
     "name": "Chhorvy Om", 
@@ -335,9 +335,11 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(array, name){
-  
+  for (let i = 11; i < artists.length; i++) {
+    return artists[i].bio;
+  }
 }
-//console.log(artistInfo(artists, 'Frida Kahlo'));
+//console.log(artistInfo(artists, 'Kazimir Malevich'));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
