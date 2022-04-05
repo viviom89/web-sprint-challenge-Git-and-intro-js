@@ -247,7 +247,7 @@ Use copy to do the following:
 
 function listOfNames(array) {
   let newArray = artists.slice();
-  for (let i = 0; i < newArray.length; i++) {
+  for (let i = 0; i <= newArray.length-1; i++) {
     return (newArray.map(i => i.name));
   };
 };
@@ -319,11 +319,11 @@ function lotsOfArt(array) {
   for (let i = 0; i < artists.length; i++) {
     if (artists[i].paintings > 100) {
       artistPaintings.push(artists[i].name);
+      }
   }
   return artistPaintings;
-}
 };
-//console.log(lotsOfArt(artists));
+console.log(lotsOfArt(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 8: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -355,12 +355,12 @@ Use artistByCountry to do the following:
 
 function artistByCountry(artists, nationality) {
  const countryArray = [];
-  for (let i = 0; i <= artists.length-1; i++) {
+  for (let i = 0; i < artists.length; i++) {
     if (artists[i].nationality === nationality) {
-      countryArray.push(artists[i].name);
-      return countryArray;
-    }
-  }
+      countryArray.push(artists[i].name); 
+    } 
+  };
+  return countryArray;
 };
 console.log(artistByCountry(artists, 'Spanish'));
 
